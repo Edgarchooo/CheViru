@@ -40,3 +40,18 @@ Permite registrar gastos, generar reportes visuales y acceder a tips financieros
 ```bash
 git clone https://github.com/Edgarchooo/CheViru.git
 cd CheViru
+
+
+## Capturas del proyecto
+
+### 🔐 Pantalla de Login
+<img src="src/assets/screenshots/login.png" width="600"/>
+
+### 💵 Página de Gastos
+<img src="src/assets/screenshots/gastos.png" width="600"/>
+
+### 📊 Página de Reportes
+<img src="src/assets/screenshots/reportes.png" width="600"/>
+
+### 💡 Página de Tips Financieros
+<img src="src/assets/screenshots/tips.png" width="600"/>
