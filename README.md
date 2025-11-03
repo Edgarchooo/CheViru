@@ -44,16 +44,16 @@ Muestra consejos útiles sobre ahorro y manejo responsable de finanzas personale
 ## Capturas del Proyecto
 
 **Pantalla de Login**  
-<img src="src/assets/screenshots/login.png" width="600"/>
+<img src="src/assets/screenshots/login.jpg" width="600"/>
 
 **Página de Gastos**  
-<img src="src/assets/screenshots/gastos.png" width="600"/>
+<img src="src/assets/screenshots/gastos.jpg" width="600"/>
 
 **Página de Reportes**  
-<img src="src/assets/screenshots/reportes.png" width="600"/>
+<img src="src/assets/screenshots/reportes.jpg" width="600"/>
 
 **Página de Tips Financieros**  
-<img src="src/assets/screenshots/tips.png" width="600"/>
+<img src="src/assets/screenshots/tips.jpg" width="600"/>
 
 ---
 
