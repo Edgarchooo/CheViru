@@ -1,0 +1,22 @@
+<ion-header translucent="true">
+  <ion-toolbar color="dark">
+    <ion-title>💡 Tips Financieros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding fondo animate">
+  <ion-card class="resumen-card">
+    <ion-card-header>
+      <ion-card-title>Consejos de Ahorro</ion-card-title>
+      <ion-card-subtitle>Che Viru — Tu guía financiera</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let tip of tips" class="tip-item">
+          <ion-icon name="checkmark-circle-outline" slot="start" color="success"></ion-icon>
+          <ion-label>{{ tip }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

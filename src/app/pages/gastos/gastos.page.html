@@ -1,0 +1,68 @@
+<ion-header translucent="true">
+  <ion-toolbar color="dark">
+    <ion-title>💸 Registrar Gastos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding fondo animate">
+  <ion-card class="resumen-card">
+    <ion-card-header>
+      <ion-card-title>Nuevo Gasto</ion-card-title>
+      <ion-card-subtitle>Che Viru — Control de Gastos</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Descripción</ion-label>
+        <ion-input [(ngModel)]="nuevo.descripcion"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Categoría</ion-label>
+        <ion-select [(ngModel)]="nuevo.categoria">
+          <ion-select-option value="Comida">🍔 Comida</ion-select-option>
+          <ion-select-option value="Transporte">🚌 Transporte</ion-select-option>
+          <ion-select-option value="Compras">🛍️ Compras</ion-select-option>
+          <ion-select-option value="Otros">📌 Otros</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Monto (Gs)</ion-label>
+        <ion-input type="number" [(ngModel)]="nuevo.monto"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" color="success" class="ion-margin-top" (click)="agregar()">
+        Agregar Gasto
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="gastos.length > 0" class="animate grafico-card">
+    <ion-card-header>
+      <ion-card-title>Listado de Gastos</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item-sliding *ngFor="let g of gastos; let i = index">
+          <ion-item>
+            <ion-label>
+              <h2>{{ g.descripcion }}</h2>
+              <p>{{ g.categoria }} — {{ g.monto | currency:'Gs. ' }}</p>
+            </ion-label>
+          </ion-item>
+          <ion-item-options side="end">
+            <ion-item-option color="danger" (click)="eliminar(i)">Eliminar</ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+
+      <ion-card class="total-card">
+        <ion-card-content>
+          <strong>Total:</strong> {{ totalGastos | currency:'Gs. ' }}
+        </ion-card-content>
+      </ion-card>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

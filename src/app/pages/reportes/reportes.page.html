@@ -1,0 +1,39 @@
+<ion-header translucent="true">
+  <ion-toolbar color="dark">
+    <ion-title>📊 Reportes Financieros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding fondo">
+  <ion-card class="resumen-card animate">
+    <ion-card-header>
+      <ion-card-title>Resumen del Mes</ion-card-title>
+      <ion-card-subtitle>Che Viru — Control de Gastos</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="info">
+        <p><strong>Total Gastado:</strong> <span class="monto">Gs. 2.300.000</span></p>
+        <p><strong>Promedio Semanal:</strong> <span class="monto">Gs. 575.000</span></p>
+        <p><strong>Categoría más alta:</strong> <span>🍔 Comida</span></p>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="grafico-card animate">
+    <ion-card-header>
+      <ion-card-title>Distribución por Categoría</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #pieCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="grafico-card animate">
+    <ion-card-header>
+      <ion-card-title>Gastos Semanales</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

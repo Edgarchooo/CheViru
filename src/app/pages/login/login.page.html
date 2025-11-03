@@ -1,0 +1,26 @@
+<ion-content class="fondo ion-padding">
+  <div class="contenedor animate">
+    <h1 class="titulo">💰 Che Viru</h1>
+    <p class="subtitulo">Controlá tus gastos con estilo</p>
+
+    <ion-card class="login-card">
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input [(ngModel)]="usuario"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="contrasena"></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" color="success" class="ion-margin-top" (click)="iniciarSesion()">
+          Iniciar sesión
+        </ion-button>
+
+        <p *ngIf="error" class="error">{{ error }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

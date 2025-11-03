@@ -1,0 +1,7 @@
+{
+  "name": "CheViru",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
